@@ -3,7 +3,7 @@ FROM debian
 RUN apt-get update -y
 RUN apt-get install -y binutils nasm vim
 
-COPY zad1 /home/root/zad1
-COPY zad2 /home/root/zad2
+COPY exercise1 /home/root/exercise1
+COPY exercise2 /home/root/exercise2
 
 WORKDIR /home/root
