@@ -25,7 +25,7 @@ b) Uruchamianie środowiska
 Na podstawie analizy plików obiektowych, stworzenie odpowiedniej biblioteki, pozwalającej na bezproblemowe uruchomienie programu.
 
 ## TREŚĆ ZADANIA:
-Podany został plik „main.c” oraz kilka plików obiektowych. Za pomocą komendy gcc z flagą -c użytej na pliku „main.c” utwórz plik „main.o”. Następnie stwórz bibliotekę o nazwie „lib.o”(ld lub ar) TYLKO z tych plików obiektowych które są potrzebne do poprawnego działania programu main oraz pliku „main.o”. Powstałe „lib.o” skompiluj gcc bez flag i odpal program. 
+Podanych zostało kilka plików obiektowych. Zadaniem jest stworzenie biblioteki o nazwie lib.o(ld lub ar) tylko z tych plików obiektowych które są potrzebne do poprawnego działania programu stworzonego na podstawie pliku main.o. Powstałe lib.o skompiluj gcc bez flag i odpal program(./a.out argument) podając jako argument ilość plików w utworzonej bibliotece.  
 
 ## ZADANIA 2 
 ### CEL ZADANIA:
