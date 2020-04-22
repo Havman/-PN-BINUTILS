@@ -24,15 +24,15 @@ b) Uruchamianie środowiska
 ### CEL ZADANIA:
 Na podstawie analizy plików obiektowych, stworzenie odpowiedniej biblioteki, pozwalającej na bezproblemowe uruchomienie programu.
 
-## TREŚĆ ZADANIA:
-Podanych zostało kilka plików obiektowych. Zadaniem jest stworzenie biblioteki o nazwie lib.o(ld lub ar) tylko z tych plików obiektowych które są potrzebne do poprawnego działania programu stworzonego na podstawie pliku main.o. Powstałe lib.o skompiluj gcc bez flag i odpal program(./a.out argument) podając jako argument ilość plików w utworzonej bibliotece.  
+### TREŚĆ ZADANIA:
+Podanych zostało kilka plików obiektowych. Zadaniem jest stworzenie biblioteki o nazwie **lib.o**(ld lub ar) **tylko** z tych plików obiektowych które są potrzebne do poprawnego działania programu stworzonego na podstawie pliku **main.o**. Powstałe **lib.o** skompiluj gcc bez flag i odpal program(**./a.out argument**) podając jako argument ilość plików .o w utworzonej bibliotece.  
 
 ## ZADANIA 2 
 ### CEL ZADANIA:
 Przykłady użycia poszczególnych narzędzi BINUTILS, odczytywanie informacji z plików obiektowych.
 
-## TREŚĆ ZADANIA:
-Przy pomocy komendy „nm” dowiedz się w jakim pliku znajduję się hasło, który kryję się pod symbolem o nazwie „password”. Hasło zostało ukryte w ciągu znaków, wyszukaj go za pomocą Strings oraz grep. Wyszukasz go pod hasłem „Tutaj”. Znaleziony kod będzie pierwsza częścią odpowiedzi, a teraz znajdź za pomocą „objdump” w jakiej sekcji znajduję się kod i skopiuj za pomocą „objcopy” tylko tą sekcję do pliku „passcopy.o”.  Sprawdź ogólny rozmiar zapisany w systemie dziesiętnym narzędziem „size”, jest to druga część odpowiedzi. Ostatnim zadaniem będzie wypisanie możliwych zestawów argumentów jakie przyjmuje funkcja „fun”. Mamy plik main.s i jego zawartość przepuścimy przez narzędzie „c++filt”, co rozkoduje nam z kod assembly. Możemy się wspomóc narzędziem grep. 
+### TREŚĆ ZADANIA:
+Dowiedz się w jakim pliku obiektowym znajduję się hasło, który kryję się pod symbolem o nazwie **„password”**. Plik ten ma ukryty **kod(„password = ...”)** w ciągu znaków, wyszukaj go(**strings, grep**). Znaleziony kod będzie pierwsza częścią odpowiedzi. Czas na drugą część odpowiedzi. Znajdź za pomocą **objdump** w jakiej sekcji znajduję się symbol **„password”** i skopiuj tylko tą sekcję do pliku **„passcopy.o”**.  Sprawdź zsumowany rozmiar wszystkich sekcji w „passcopy.o” zapisany w systemie dziesiętnym, wynik jest drugą częścią odpowiedzi. Kolejną część odpowiedzi zdobędziemy pośrednio poprzez odnalezienie możliwych zestawów argumentów jakie przyjąć może funkcja **„fun”**. Mamy plik **main.s** i przy pomocy **„c++filt”** możemy zobaczyć kod assembly z oryginalnymi nazwami funkcji. Ilość zestawów argumentów z **co najmniej** jednym wystąpieniem inta jest trzecią i ostatnią częścią odpowiedzi. Uruchom program(**./a.out argument**) podając jako argument sklejone ze sobą części odpowiedzi. 
 
 ## USUWANIE PO SKOŃCZENIU
 Ściągnięte pliki możemy usunąć używająć
