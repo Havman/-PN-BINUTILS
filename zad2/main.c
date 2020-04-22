@@ -15,6 +15,6 @@ int main(){
     int resultSub = substraction(a, b);
 
 
-    printf("%d\t%d\t%d\n PI = %f...\n", resultAdd, resultMulti, resultSub, PI);
+    printf("%d\t%d\t%d\n PI = %f\n", resultAdd, resultMulti, resultSub, PI);
     return 0;
 }
