@@ -73,10 +73,86 @@ _Z3fund:
 	.cfi_endproc
 .LFE3:
 	.size	_Z3fund, .-_Z3fund
+	.globl	_Z3funbi
+	.type	_Z3funbi, @function
+_Z3funbi:
+.LFB4:
+	.cfi_startproc
+	pushq	%rbp
+	.cfi_def_cfa_offset 16
+	.cfi_offset 6, -16
+	movq	%rsp, %rbp
+	.cfi_def_cfa_register 6
+	movl	%edi, %eax
+	movl	%esi, -8(%rbp)
+	movb	%al, -4(%rbp)
+	movl	$5, %eax
+	popq	%rbp
+	.cfi_def_cfa 7, 8
+	ret
+	.cfi_endproc
+.LFE4:
+	.size	_Z3funbi, .-_Z3funbi
+	.globl	_Z3funf
+	.type	_Z3funf, @function
+_Z3funf:
+.LFB5:
+	.cfi_startproc
+	pushq	%rbp
+	.cfi_def_cfa_offset 16
+	.cfi_offset 6, -16
+	movq	%rsp, %rbp
+	.cfi_def_cfa_register 6
+	movss	%xmm0, -4(%rbp)
+	movl	$10, %eax
+	popq	%rbp
+	.cfi_def_cfa 7, 8
+	ret
+	.cfi_endproc
+.LFE5:
+	.size	_Z3funf, .-_Z3funf
+	.globl	_Z3funPci
+	.type	_Z3funPci, @function
+_Z3funPci:
+.LFB6:
+	.cfi_startproc
+	pushq	%rbp
+	.cfi_def_cfa_offset 16
+	.cfi_offset 6, -16
+	movq	%rsp, %rbp
+	.cfi_def_cfa_register 6
+	movq	%rdi, -8(%rbp)
+	movl	%esi, -12(%rbp)
+	movl	$15, %eax
+	popq	%rbp
+	.cfi_def_cfa 7, 8
+	ret
+	.cfi_endproc
+.LFE6:
+	.size	_Z3funPci, .-_Z3funPci
+	.globl	_Z3fundi
+	.type	_Z3fundi, @function
+_Z3fundi:
+.LFB7:
+	.cfi_startproc
+	pushq	%rbp
+	.cfi_def_cfa_offset 16
+	.cfi_offset 6, -16
+	movq	%rsp, %rbp
+	.cfi_def_cfa_register 6
+	movsd	%xmm0, -8(%rbp)
+	movl	%edi, -12(%rbp)
+	movl	$20, %eax
+	popq	%rbp
+	.cfi_def_cfa 7, 8
+	ret
+	.cfi_endproc
+.LFE7:
+	.size	_Z3fundi, .-_Z3fundi
 	.globl	main
 	.type	main, @function
 main:
-.LFB4:
+.LFB8:
 	.cfi_startproc
 	pushq	%rbp
 	.cfi_def_cfa_offset 16
@@ -89,7 +165,7 @@ main:
 	.cfi_def_cfa 7, 8
 	ret
 	.cfi_endproc
-.LFE4:
+.LFE8:
 	.size	main, .-main
 	.ident	"GCC: (Ubuntu 7.5.0-3ubuntu1~18.04) 7.5.0"
 	.section	.note.GNU-stack,"",@progbits
