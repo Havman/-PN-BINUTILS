@@ -45,4 +45,5 @@ https://www.youtube.com/watch?v=FIOo9HMlJLs&t=1s
 
 Bibliografia:  
 https://www.thegeekstuff.com/2017/01/gnu-binutils-commands/
+
 http://www.linux.pl/man/index.php?
