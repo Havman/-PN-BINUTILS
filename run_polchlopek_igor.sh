@@ -30,14 +30,3 @@ if [ "$command" = "clean" ]; then
     sudo docker rmi igorpolchlopek:1.0 
     sudo docker rmi ubuntu:20.04
 fi
-
-if [ "$command" = "solution" ]; then
-    if [[ -d "BINUTILS" ]]
-    then
-        cd BINUTILS
-    fi
-    unzip -P binutils sol.zip
-    sudo docker build -t igorpolchlopek:1.0 .
-    cat info.txt
-    sudo docker run -it igorpolchlopek:1.0
-fi
